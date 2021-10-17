@@ -1,5 +1,12 @@
-# Image Stub Generator
+![Image Stub Generator Preview](./src/assets/logo.svg)
 
-Application for generating static stub-images on client
+# 🌠 Image Stub Generator
 
-![Image Stub Generator Preview](./src/assets/social.jpg)
+Приложение для генерации статических изображений на клиенте
+
+⚛️ React | 💅 Emotion | 🏙 TypeScript
+
+
+![Image Stub Generator Preview](/src/assets/preview.mp4)
+
+
