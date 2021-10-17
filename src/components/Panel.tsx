@@ -1,13 +1,15 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
+import superEllipse from '@/assets/img/super-ellipse.svg';
+
 export const Box = styled.div`
     width: 507px;
     height: 62px;
     display: flex;
     align-items: center;
     padding: 0 35px;
-    background-image: url('/src/assets/img/super-ellipse.svg');
+    background-image: url(${superEllipse});
     background-repeat: no-repeat;
 `;
 

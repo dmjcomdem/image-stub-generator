@@ -1,6 +1,8 @@
 import { css, Global } from '@emotion/react';
 import React from 'react';
 
+import bgTail from '@/assets/img/bg-tail.svg';
+
 export const GlobalStyles: React.FC = () => {
     return (
         <Global
@@ -39,7 +41,7 @@ export const GlobalStyles: React.FC = () => {
                     width: 100%;
                     height: 30vmax;
                     background-size: cover;
-                    background-image: url('/src/assets/img/bg-tail.svg');
+                    background-image: url(${bgTail});
                     pointer-events: none;
                 }
 

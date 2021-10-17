@@ -8,7 +8,7 @@ import { ButtonDownload, ColorPicker, Logo, Panel, SizeControls, TextFill, ViewB
 import { GlobalStyles } from '@/styles/global';
 
 export const App: React.FC = () => {
-    const [color, setColor] = React.useState('#a4a4a4');
+    const [color, setColor] = React.useState('#bdbdbd');
     const [text, setText] = React.useState('Placeholder {size}');
     const [width, setWidth] = React.useState(700);
     const [height, setHeight] = React.useState(400);
