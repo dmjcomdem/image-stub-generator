@@ -13,7 +13,7 @@ export const H1Styled = styled.h1`
 export const Logo: React.FC = () => {
     return (
         <H1Styled>
-            <span className="visually-hidden">Application for generating static client images of stubs</span>
+            <span className="visually-hidden">Приложение для генерации статических изображений</span>
             <LogoSVG width="396" height="79" />
         </H1Styled>
     );

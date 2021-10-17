@@ -9,7 +9,7 @@ describe('App', () => {
     });
 
     it('reder', async () => {
-        const logoTitle = await screen.getByText('Application for generating static client images of stubs'); //?
+        const logoTitle = await screen.getByText('Приложение для генерации статических изображений'); //?
         expect(logoTitle).toBeInTheDocument();
     });
 });

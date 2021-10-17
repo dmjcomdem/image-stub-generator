@@ -2,4 +2,4 @@
 
 Application for generating static stub-images on client
 
-...work in progress...
+![Image Stub Generator Preview](./src/assets/preview.jpg)
