@@ -11,13 +11,13 @@ export const Box = styled.div`
     background-repeat: no-repeat;
 `;
 
-interface Panel {
+type PanelType = {
     columns: string;
     split?: boolean;
     gap?: number;
-}
+};
 
-export const Panel = styled(Box)<Panel>`
+export const Panel = styled(Box)<PanelType>`
     display: grid;
     grid-template-columns: ${props => props.columns};
     align-items: center;

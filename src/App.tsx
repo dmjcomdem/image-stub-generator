@@ -1,9 +1,10 @@
 import { saveAs } from 'file-saver';
 import * as HTMLToImage from 'html-to-image';
 import React from 'react';
-import { ReactComponent as TextIcon } from '@/assets/icons/text.svg';
+
 import { ReactComponent as Line } from '@/assets/icons/line.svg';
-import { ColorPicker, Logo, Panel, SizeControls, TextFill, ViewBoard, ButtonDownload } from '@/components';
+import { ReactComponent as TextIcon } from '@/assets/icons/text.svg';
+import { ButtonDownload, ColorPicker, Logo, Panel, SizeControls, TextFill, ViewBoard } from '@/components';
 import { GlobalStyles } from '@/styles/global';
 
 export const App: React.FC = () => {

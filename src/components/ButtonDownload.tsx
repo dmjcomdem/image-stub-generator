@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
+
 import { ReactComponent as DownloadIcon } from '@/assets/icons/download.svg';
 
 export const ButtonDownloadWrapper = styled.label`
@@ -34,11 +35,11 @@ export const ButtonDownloadWrapper = styled.label`
     }
 `;
 
-interface ButtonDownload {
+type ButtonDownloadType = {
     onDownload: () => void;
-}
+};
 
-export const ButtonDownload: React.FC<ButtonDownload> = props => {
+export const ButtonDownload: React.FC<ButtonDownloadType> = props => {
     return (
         <ButtonDownloadWrapper>
             <button onClick={props.onDownload}>

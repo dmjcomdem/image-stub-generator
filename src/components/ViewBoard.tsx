@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import React from 'react';
 import invert from 'invert-color';
+import React from 'react';
 
 export const BoardStyled = styled.div`
     position: relative;
@@ -18,14 +18,14 @@ export const BoardStyled = styled.div`
     }
 `;
 
-interface Board {
+type BoardType = {
     onResize: (event: React.MouseEvent<HTMLDivElement>) => void;
     width: number;
     height: number;
     color: string;
     text: string;
-}
-const ViewBoard = React.forwardRef<HTMLDivElement, Board>(({ color, width, height, onResize, text }, ref) => {
+};
+const ViewBoard = React.forwardRef<HTMLDivElement, BoardType>(({ color, width, height, onResize, text }, ref) => {
     return (
         <BoardStyled
             onMouseMove={onResize}

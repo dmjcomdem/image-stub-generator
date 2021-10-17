@@ -1,5 +1,6 @@
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
+
 import { ReactComponent as XIcon } from '@/assets/icons/x.svg';
 
 export const SizeControlsWrapper = styled.div`
@@ -14,14 +15,14 @@ export const SizeControlsWrapper = styled.div`
     }
 `;
 
-interface SizeControls {
+type SizeControlsType = {
     width: number;
     height: number;
     onWidth: (size: number) => void;
     onHeight: (size: number) => void;
-}
+};
 
-export const SizeControls: React.FC<SizeControls> = ({ width, height, onWidth, onHeight }) => {
+export const SizeControls: React.FC<SizeControlsType> = ({ width, height, onWidth, onHeight }) => {
     const handleWidthChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         onWidth(Number(event.target.value));
     };
