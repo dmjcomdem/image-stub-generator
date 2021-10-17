@@ -69,7 +69,7 @@ export const GlobalStyles: React.FC = () => {
                 .layout {
                     position: relative;
                     min-height: 100vh;
-                    display: grid;
+                    display: flex;
                     align-items: center;
                     justify-content: center;
 

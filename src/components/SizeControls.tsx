@@ -7,7 +7,6 @@ export const SizeControlsWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 10px 1fr;
     align-items: center;
-    user-select: none;
 
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
