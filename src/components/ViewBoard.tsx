@@ -39,7 +39,7 @@ const ViewBoard = React.forwardRef<HTMLDivElement, BoardType>(({ color, width, h
             }}
             data-testid="view-board"
         >
-            <svg x="0" y="0" viewBox="0 0 250 20" width="100%">
+            <svg x="0" y="0" viewBox="0 0 250 21" width="100%">
                 <foreignObject x="0" y="0" height="100%" width="100%">
                     {text}
                 </foreignObject>
