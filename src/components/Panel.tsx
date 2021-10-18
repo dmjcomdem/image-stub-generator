@@ -25,24 +25,6 @@ export const Panel = styled(Box)<PanelType>`
     align-items: center;
     position: relative;
 
-    ${({ split }) =>
-        split &&
-        css`
-            > * {
-                position: relative;
-            }
-
-            > *:not(:first-child)::before {
-                content: '';
-                position: absolute;
-                top: 4px;
-                left: -25px;
-                height: 80%;
-                width: 1px;
-                background-color: #444444;
-            }
-        `}
-
     ${({ gap }) =>
         gap &&
         css`

@@ -17,13 +17,14 @@ export const App: React.FC = () => {
 
     React.useEffect(() => {
         const sizeFormat = `${width}×${height}`;
+        const pattern = '{size}';
 
         if (!text) {
             return setFormat(sizeFormat);
         }
 
-        if (text.includes('{size}')) {
-            const replaceText = text.replace(/{size}/g, sizeFormat);
+        if (text.includes(pattern)) {
+            const replaceText = text.replace(pattern, sizeFormat);
             setFormat(replaceText);
         } else {
             setFormat(text);

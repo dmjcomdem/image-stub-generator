@@ -12,6 +12,7 @@ export const BoardStyled = styled.div`
     resize: both;
     border-radius: 4px;
     user-select: none;
+    font-family: system-ui, sans-serif;
 
     svg {
         margin-top: 4px;
@@ -36,10 +37,11 @@ const ViewBoard = React.forwardRef<HTMLDivElement, BoardType>(({ color, width, h
                 width: width,
                 height: height
             }}
+            data-testid="view-board"
         >
-            <svg x="0" y="0" viewBox="0 0 250 20" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <svg x="0" y="0" viewBox="0 0 250 20" width="100%">
                 <foreignObject x="0" y="0" height="100%" width="100%">
-                    <text>{text}</text>
+                    {text}
                 </foreignObject>
             </svg>
         </BoardStyled>

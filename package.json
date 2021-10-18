@@ -12,8 +12,8 @@
         "eslint:fix": "eslint --fix ./src",
         "eslint:check": "eslint ./src",
         "ts:check": "tsc -p tsconfig.json --noEmit",
-        "lint": "npm run ts:check && npm run prettier:check && npm run eslint:check",
-        "test": "jest -env=jsdom --watchAll=true",
+        "lint": "npm run ts:check && npm run prettier:write && npm run prettier:check && npm run eslint:fix && npm run eslint:check",
+        "test": "jest -env=jsdom",
         "prepare": "husky install"
     },
     "dependencies": {

@@ -42,7 +42,7 @@ type ButtonDownloadType = {
 export const ButtonDownload: React.FC<ButtonDownloadType> = props => {
     return (
         <ButtonDownloadWrapper>
-            <button onClick={props.onDownload}>
+            <button onClick={props.onDownload} data-testid="button-download">
                 <DownloadIcon />
             </button>
             <svg width="41" height="40" className="svg-outline">

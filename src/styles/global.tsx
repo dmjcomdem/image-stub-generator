@@ -26,7 +26,7 @@ export const GlobalStyles: React.FC = () => {
                     margin: 0;
                     padding: 0;
                     min-height: 100vh;
-                    font-family: system-ui, sans-serif;
+                    font-family: 'Montserrat', system-ui, sans-serif;
                     font-size: 16px;
                     color: white;
                     background: linear-gradient(110deg, #171717 0.38%, #222222 100%);
@@ -43,6 +43,12 @@ export const GlobalStyles: React.FC = () => {
                     background-size: cover;
                     background-image: url(${bgTail});
                     pointer-events: none;
+                }
+
+                ::selection {
+                    color: white;
+                    background-color: #665ea2;
+                    border-radius: 2px;
                 }
 
                 input {

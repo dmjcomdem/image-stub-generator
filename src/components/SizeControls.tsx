@@ -32,9 +32,9 @@ export const SizeControls: React.FC<SizeControlsType> = ({ width, height, onWidt
 
     return (
         <SizeControlsWrapper>
-            <input value={width} onChange={handleWidthChange} type="number" min="0" />
+            <input value={width} onChange={handleWidthChange} type="number" min="0" data-testid="input-width" />
             <XIcon />
-            <input value={height} onChange={handleHeightChange} type="number" min="0" />
+            <input value={height} onChange={handleHeightChange} type="number" min="0" data-testid="input-height" />
         </SizeControlsWrapper>
     );
 };
