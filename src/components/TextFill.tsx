@@ -11,7 +11,5 @@ export const TextFill: React.FC<TextFillType> = props => {
         props.onChange(event.target.value);
     };
 
-    return (
-        <input {...props} onChange={handleChange} type="text" style={{ marginLeft: '-20px' }} data-testid="text-fill" />
-    );
+    return <input {...props} onChange={handleChange} type="text" style={{ textIndent: -20 }} data-testid="text-fill" />;
 };
